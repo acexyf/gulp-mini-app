@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "gulp-rename": "^1.4.0"
   },
   "devDependencies": {
     "glob": "^7.1.4",

@@ -1238,6 +1238,11 @@ gulp-match@^1.0.3:
   dependencies:
     minimatch "^3.0.3"
 
+gulp-rename@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npm.taobao.org/gulp-rename/download/gulp-rename-1.4.0.tgz#de1c718e7c4095ae861f7296ef4f3248648240bd"
+  integrity sha1-3hxxjnxAla6GH3KW708ySGSCQL0=
+
 gulp-watch@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npm.taobao.org/gulp-watch/download/gulp-watch-5.0.1.tgz#83d378752f5bfb46da023e73c17ed1da7066215d"
