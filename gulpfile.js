@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
-
+var less = require('gulp-less');
+var glob = require("glob")
 
 //环境变量
 var env = process.env.NODE_ENV || 'prod';
@@ -18,7 +19,7 @@ gulp.task('common-file',function(){
 
 
 gulp.task('watch',function(){
-    gulp.watch('./app.js', gulp.series('common-file'))
+    gulp.watch(['./app.js','./app.json','./project.config.json', './sitemap.json', './app.wxss'], gulp.series('common-file'))
 })
 
 
