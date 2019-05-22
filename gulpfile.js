@@ -6,7 +6,9 @@ var rename = require('gulp-rename');
 
 //环境变量
 var env = process.env.NODE_ENV || 'prod';
+
 var isProd = env === 'prod';
+
 var buildFile = '../build';
 
 
@@ -16,7 +18,17 @@ gulp.task('common-file',function(){
             .pipe(gulp.dest(`${buildFile}`))
 })
 
+gulp.task('utils', function(){
+    return gulp.src(glob.sync('./utils/*.*'))
+            .pipe(gulp.dest(`${buildFile}/utils`))
+})
 
+gulp.task('wxml', function(){
+
+    console.log(glob.sync('./pages/**/*.wxml'))
+    return gulp.src(glob.sync('./pages/**/*.wxml'), { base: 'pages'})
+        .pipe(gulp.dest(`${buildFile}/pages`))
+})
 
 
 gulp.task('watch',function(){
@@ -25,14 +37,15 @@ gulp.task('watch',function(){
 
 
 
+
 if(isProd){
-    gulp.task('default', gulp.series('common-file', function(done){
+    gulp.task('default', gulp.series('common-file', 'utils', 'wxml', function(done){
         console.log('prod');
         done()
     }));
 } else {
 
-    gulp.task('default', gulp.series('common-file','watch', function(done){
+    gulp.task('default', gulp.series('common-file', 'utils', 'watch', function(done){
         console.log('dev');
         done()
     }));

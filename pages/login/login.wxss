@@ -1,0 +1,215 @@
+page {
+  background: #fff;
+}
+
+.header {
+  font-size: 58rpx;
+  color: #313133;
+  font-weight: 500;
+  padding: 36rpx 50rpx 10rpx 50rpx;
+  display: block;
+}
+
+.top-header {
+  height: 250rpx;
+}
+
+.info {
+  font-size: 32rpx;
+  color: #c2b8a9;
+  padding: 0 0 0 50rpx;
+}
+
+.content {
+  background-color: #fff;
+  -webkit-box-shadow: 0 -12rpx 36rpx -6rpx rgba(161, 167, 171, 0.1);
+          box-shadow: 0 -12rpx 36rpx -6rpx rgba(161, 167, 171, 0.1);
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .icons .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 102rpx 0;
+}
+
+.content .icons .box .name {
+  font-size: 30rpx;
+  color: #313133;
+}
+
+.content .icons .icon {
+  width: 156rpx;
+  height: 156rpx;
+  margin: 0 30rpx;
+}
+
+.content .next {
+  height: 80rpx;
+  border-radius: 6rpx;
+  background-color: #9B2930;
+  color: #fff;
+  -webkit-box-shadow: 0 14rpx 18rpx -8rpx rgba(209, 63, 64, 0.1);
+          box-shadow: 0 14rpx 18rpx -8rpx rgba(209, 63, 64, 0.1);
+  font-size: 30rpx;
+  width: 80%;
+  position: absolute;
+  top: 410rpx;
+  left: 10%;
+}
+
+.content .form {
+  margin: 0 10% 128rpx 10%;
+  padding-top: 80rpx;
+}
+
+.content .form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.content .form .row .label {
+  width: 40rpx;
+  height: 40rpx;
+  padding-top: 8rpx;
+  padding-right: 10rpx;
+}
+
+.content .form .row .login-input {
+  display: inline-block;
+  width: calc(100% - 65rpx);
+  margin-left: 24rpx;
+  padding: 40rpx 0 28rpx 0;
+  border-bottom: 2rpx solid #ECECEF;
+  font-size: 30rpx;
+  color: #313133;
+}
+
+.content .form .row .before-input {
+  font-size: 32rpx;
+  color: #C0C0C0 !important;
+}
+
+.content .form .row .get-code {
+  margin-right: -10rpx;
+  border-radius: 30px;
+  color: #9A2B30;
+  font-size: 26rpx;
+  border: 1rpx solid #9A2B30;
+  background: #fff;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 200rpx;
+}
+
+.content .form .row .get-code::after {
+  border: none;
+}
+
+.content .form .row .getting {
+  font-size: 32rpx;
+  color: #6A6A6D;
+  background-color: #fff;
+  text-align: right;
+  border: none;
+  width: 240rpx;
+  border-radius: 4rpx;
+  margin-right: -30rpx;
+  padding-left: 40rpx;
+}
+
+.content .form .row .getting::after {
+  border: none;
+}
+
+.content .form .row .get-msg-code {
+  color: #9A2B30;
+  font-size: 26rpx;
+  padding: 10rpx 20rpx;
+  border: 1rpx solid #9A2B30;
+  border-radius: 30rpx;
+  position: absolute;
+  right: 0;
+  bottom: 32rpx;
+  z-index: 10;
+}
+
+.content .form .row .get-msg-code-disable {
+  font-size: 32rpx;
+  color: #6A6A6D;
+  padding: 10rpx 20rpx;
+  position: absolute;
+  right: 0;
+  bottom: 32rpx;
+}
+
+.content .form .tips {
+  font-size: 28rpx;
+  color: #A0A0A0;
+  text-align: left;
+  display: inline-block;
+  margin-top: 30rpx;
+}
+
+.content .register {
+  position: absolute;
+  top: 490rpx;
+  width: 80%;
+  left: 10%;
+}
+
+.content .register .reg {
+  float: right;
+  font-size: 28rpx;
+  color: #9A2B30;
+  margin-top: 36rpx;
+}
+
+.content .register .change-mode {
+  display: inline-block;
+  font-size: 28rpx;
+  color: #9A2B30;
+  margin-top: 36rpx;
+  background: url(http://static.lingdehealth.com/xietong-wx-mp/imgs/change-mode-tri.png) no-repeat;
+  background-size: 32rpx 32rpx;
+  background-position: right center;
+  padding-right: 36rpx;
+  height: 40rpx;
+}
+/*# sourceMappingURL=login.wxss.map */

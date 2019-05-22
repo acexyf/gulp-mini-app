@@ -1,0 +1,53 @@
+<view class="page-wrapper">
+    <view class="top-header">
+        <text class="header">欢迎</text>
+        <text class="info">登录全国呼吸专科医联体平台</text>
+    </view>
+    <view class="content" wx:if="{{status==0}}">
+        <view class="form">
+            <view class="row">
+                <image class="label" src="http://www.hxylt.org.cn/image/mini-programe/icon_XCX_login_list_1.png"></image>
+                <input type="idcard" placeholder-class="before-input"  class="login-input" data-focus="0" bindblur="blur" bindfocus="focus" bindinput="bindAccount" placeholder-style="color:#A0A0A0" placeholder="手机号" />
+            </view>
+            <view class="row" wx:if="{{doctorMode == 0}}">
+                <image class="label" src="http://www.hxylt.org.cn/image/mini-programe/icon_XCX_login_list_2.png"></image>
+                <input type="password" placeholder-class="before-input" class="login-input" data-focus="0" bindblur="blur" bindfocus="focus"  bindinput="bindPassword" placeholder-style="color:#A0A0A0" placeholder="登录密码" />
+            </view>
+            <view class="row" wx:elif="{{doctorMode == 1}}">
+                <image class="label" src="http://www.hxylt.org.cn/image/mini-programe/icon_XCX_login_list_2.png"></image>
+                <input type="text" maxlength="20" placeholder-class="before-input" class="login-input" data-focus="0" bindblur="blur" bindfocus="focus"  bindinput="bindMsgCode" placeholder-style="color:#A0A0A0" placeholder="验证码" />
+                <view class="get-msg-code" bindtap="getMsgCode" wx:if="{{!getting}}">获取验证码</view>
+                <view class="get-msg-code-disable" wx:else>{{timing}}s</view>
+            </view>
+            <text class="tips">提示：登录账号和PC端一致</text>
+        </view>
+        <button class="next" bindtap="login">登录</button>
+        <view class="register">
+            <view class="change-mode" bindtap="toggleDoctorMode">{{doctorMode == 0 ? '短信验证码登录' : '账号密码登录'}}</view>
+            <view class="reg" bindtap="goRegister">医生注册</view>
+        </view>
+    </view>
+    <view class="content" wx:if="{{status==1}}">
+        <view class="form" style="padding-top:50rpx">
+            <view class="row">
+                <image class="label" src="http://www.hxylt.org.cn/image/mini-programe/icon_XCX_login_list_1.png"></image>
+                <input placeholder-class="before-input" class="login-input"  data-focus="0" bindblur="blur" bindfocus="focus" bindinput="bindName" placeholder-style="color:#A0A0A0" placeholder="患者姓名" />
+            </view>
+            <view class="row">  
+                <image class="label" src="http://www.hxylt.org.cn/image/mini-programe/icon_XCX_login_list_3.png"></image>
+                <input type="idcard" placeholder-class="before-input" class="login-input" data-focus="0" bindblur="blur" bindfocus="focus" bindinput="bindIDCard" placeholder-style="color:#A0A0A0" placeholder="身份证" />
+            </view>
+            <view class="row">
+                <image class="label" src="http://www.hxylt.org.cn/image/mini-programe/icon_XCX_login_list_4.png"></image>
+                <input type="idcard"  placeholder-class="before-input" class="login-input" data-focus="0" bindblur="blur" bindfocus="focus" bindinput="bindTel" placeholder-style="color:#A0A0A0" placeholder="手机号" />
+            </view>
+            <view class="row">
+                <image class="label" src="http://www.hxylt.org.cn/image/mini-programe/icon_XCX_login_list_5.png"></image>
+                <input placeholder-class="before-input" class="login-input" style="width:unset" value="{{code}}"  data-focus="0" bindblur="blur" bindfocus="focus" bindinput="bindCode" placeholder-style="color:#A0A0A0" placeholder="验证码" />
+                <button class="get-code" hover-class="get-click" wx:if="{{!getting}}" bindtap="getCode">获取验证码</button>
+                <button class="getting"  wx:else>{{timing}} s</button>
+            </view>
+        </view>
+        <button class="next" bindtap="login" open-type="getUserInfo" style="top:600rpx">登录</button>
+    </view>
+</view>
