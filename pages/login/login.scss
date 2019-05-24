@@ -1,0 +1,190 @@
+$c1 :#313133;
+$c2 :#6A6A6D;
+$c3 :#A0A0A0;
+$c4 :#C0C0C0;
+$c5 :#ECECEF;
+$c6 :#FFE0DC;
+$greyBg :#f5f4f7;
+$redPoint: #EF544D;
+$redBorder: #9A2B30;
+$danger: #9B2930;
+$danger-disable: #E77279;
+$button-second: #D6BCA0;
+$a1: 40rpx;
+$a2: 36rpx;
+$a7: 30rpx;
+$a3: 28rpx;
+$a4: 26rpx;
+$a5: 24rpx;
+$a6: 22rpx;
+page {
+    background: #fff;
+}
+
+.header {
+    font-size: 58rpx;
+    color: #313133;
+    font-weight: 500;
+    padding: 36rpx 50rpx 10rpx 50rpx;
+    display: block;
+}
+
+.top-header {
+    height: 250rpx;
+}
+
+.info {
+    font-size: 32rpx;
+    color: #c2b8a9;
+    padding: 0 0 0 50rpx;
+}
+
+.content {
+    background-color: #fff;
+    box-shadow: 0 -12rpx 36rpx -6rpx rgba(161, 167, 171, 0.1);
+    border-radius: 20rpx;
+    position: relative;
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 102rpx 0;
+            .name {
+                font-size: 30rpx;
+                color: #313133;
+            }
+        }
+        .icon {
+            width: 156rpx;
+            height: 156rpx;
+            margin: 0 30rpx;
+        }
+    }
+    .next {
+        height: 80rpx;
+        border-radius: 6rpx;
+        background-color: #9B2930;
+        color: #fff;
+        box-shadow: 0 14rpx 18rpx -8rpx rgba(209, 63, 64, 0.1);
+        font-size: 30rpx;
+        width: 80%;
+        position: absolute;
+        top: 410rpx;
+        left: 10%;
+    }
+    .form {
+        margin: 0 10% 128rpx 10%;
+        padding-top: 80rpx;
+        .row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            .label {
+                width: 40rpx;
+                height: 40rpx;
+                padding-top: 8rpx;
+                padding-right: 10rpx;
+            }
+            .login-input {
+                display: inline-block;
+                width: calc(100% - 65rpx);
+                margin-left: 24rpx;
+                padding: 40rpx 0 28rpx 0;
+                border-bottom: 2rpx solid #ECECEF;
+                font-size: 30rpx;
+                color: #313133;
+            }
+            .before-input {
+                font-size: 32rpx;
+                color: $c4 !important;
+            }
+            .get-code {
+                margin-right: -10rpx;
+                &::after {
+                    border: none;
+                }
+                border-radius:30px;
+                color:#9A2B30;
+                font-size:26rpx;
+                border:1rpx solid #9A2B30;
+                background: #fff;
+                height: 60rpx;
+                line-height: 60rpx;
+                width: 200rpx;
+            }
+            .get-click {
+                // color: #f86f6e;
+            }
+            .getting {
+                font-size: 32rpx;
+                color: $c2;
+                background-color: #fff;
+                text-align: right;
+                border: none;
+                width: 240rpx;
+                border-radius: 4rpx;
+                margin-right: -30rpx;
+                padding-left: 40rpx;
+                &::after {
+                    border: none;
+                }
+            }
+            .get-msg-code{
+                color: #9A2B30;
+                font-size: 26rpx;
+                padding: 10rpx 20rpx;
+                border: 1rpx solid #9A2B30;
+                border-radius: 30rpx;
+                position: absolute;
+                right: 0;
+                bottom: 32rpx;
+                z-index: 10;
+            }
+            .get-msg-code-disable{
+                font-size: 32rpx;
+                color: $c2;
+                padding: 10rpx 20rpx;
+                position: absolute;
+                right: 0;
+                bottom: 32rpx;
+            }
+        }
+        .tips {
+            font-size: $a3;
+            color: $c3;
+            text-align: left;
+            display: inline-block;
+            margin-top: 30rpx;
+        }
+    }
+    .register {
+        position: absolute;
+        top: 490rpx;
+        width: 80%;
+        left: 10%;
+        .reg {
+            float: right;
+            font-size: $a3;
+            color: $redBorder;
+            margin-top: 36rpx;
+        }
+        .change-mode{
+            display: inline-block;
+            font-size:$a3;
+            color:$redBorder;
+            margin-top:36rpx;
+            background: url(http://static.lingdehealth.com/xietong-wx-mp/imgs/change-mode-tri.png) no-repeat;
+            background-size: 32rpx 32rpx;
+            background-position:  right center;
+            padding-right: 36rpx;
+            height:40rpx;
+        }
+    }
+}

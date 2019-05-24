@@ -1,0 +1,80 @@
+<view>
+    <view class="page-wrapper">
+        <view class="content">
+            <view class="status1">
+                <button class="button" hover-class="btn-click" data-login="0" bindtap="doctorLogin">
+                    login
+                </button>
+                <button class="button" hover-class="btn-click" data-login="0" bindtap="register">
+                    register
+                </button>
+                <view style="clear: both; margin-top: 20px"></view>
+                <button class="button" hover-class="btn-click" data-login="chenliu_0" bindtap="doctorLogin">
+                    王院士
+                </button>
+                <button class="button" hover-class="btn-click" data-login="pengxu_0" bindtap="doctorLogin">
+                    彭院士
+                </button>
+                <view style="clear: both; margin-top: 20px"></view>
+                <button class="button" hover-class="btn-click" data-login="jiandong_1" bindtap="doctorLogin">
+                    建东院士助理
+                </button>
+                <view style="clear: both; margin-top: 20px"></view>
+                <button class="button" hover-class="btn-click" data-login="jiandong_0" bindtap="doctorLogin">
+                    建东管理员
+                </button>
+                <button class="button" hover-class="btn-click" data-login="yunchao_0" bindtap="doctorLogin">
+                    宋云超管理员
+                </button>
+                <view style="clear: both; margin-top: 20px"></view>
+                <button class="button" hover-class="btn-click" bindtap="patientLogin" data-login="1237">
+                    1237患者
+                </button>
+                <button class="button" hover-class="btn-click" bindtap="patientLogin" data-login="1238">
+                    1238患者
+                </button>
+                <button class="button" hover-class="btn-click" bindtap="patientLogin" data-login="1239">
+                    1239患者
+                </button>
+                <view style="clear: both; margin-top: 20px"></view>
+
+                <button class="button" hover-class="btn-click" data-login="zhuzhen_0" bindtap="doctorLogin">
+                    朱振医生
+                </button>
+                
+                <button class="button" hover-class="btn-click" data-login="ruoxi_0" bindtap="doctorLogin">
+                    若曦医生
+                </button>
+                <button class="button" hover-class="btn-click" data-login="hongrunyi_0" bindtap="doctorLogin">
+                    洪润伊医生
+                </button>
+                <button class="button" hover-class="btn-click" data-login="limingzhe_0" bindtap="doctorLogin">
+                    李明哲医生
+                </button>
+                <button class="button" hover-class="btn-click" data-login="fanghenwei_0" bindtap="doctorLogin">
+                    方恒伟医生
+                </button>
+                <button class="button" hover-class="btn-click" data-login="xiexiaofei_0" bindtap="doctorLogin">
+                    谢小飞医生
+                </button>
+                <button class="button" hover-class="btn-click" data-login="jintao_0" bindtap="doctorLogin">
+                    金涛医生
+                </button>
+                <button class="button" hover-class="btn-click" data-login="yiming_0" bindtap="doctorLogin">
+                    一鸣医生
+                </button>
+                <button class="button" hover-class="btn-click" data-login="ceshi_1" bindtap="doctorLogin">
+                    测试医生1
+                </button>
+                <button class="button" hover-class="btn-click" data-login="ceshi_2" bindtap="doctorLogin">
+                    测试医生2
+                </button>
+                <button class="button" hover-class="btn-click" data-login="guanli_1" bindtap="doctorLogin">
+                    管理员1
+                </button>
+                <view style="clear: both; margin-top: 20px"></view>
+            </view>
+        </view>
+    </view>
+</view>
+
