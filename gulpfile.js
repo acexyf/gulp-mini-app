@@ -55,9 +55,12 @@ gulp.task('sass', function(){
 
 gulp.task('watch',function(){
     gulp.watch(glob.sync('./@(app.js|app.json|sitemap.json|project.config.json|app.wxss)'), gulp.series('common-file'))
-
-
-    
+    gulp.watch(glob.sync('./utils/*.*'), gulp.series('utils'))
+    gulp.watch(glob.sync('./pages/**/*.wxml'), gulp.series('wxml'))
+    gulp.watch(glob.sync('./pages/**/*.js'), gulp.series('js'))
+    gulp.watch(glob.sync('./pages/**/*.json'), gulp.series('json'))
+    gulp.watch(glob.sync('./pages/**/*.wxss'), gulp.series('wxss'))
+    gulp.watch(glob.sync('./pages/**/*.scss'), gulp.series('sass'))
 })
 
 
@@ -70,7 +73,7 @@ if(isProd){
     }));
 } else {
 
-    gulp.task('default', gulp.series('common-file', 'utils', 'watch', function(done){
+    gulp.task('default', gulp.series('common-file', 'utils', 'wxml', 'js', 'sass', 'wxss', 'json', 'watch', function(done){
         console.log('dev');
         done()
     }));

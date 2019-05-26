@@ -1,0 +1,5 @@
+
+.wrap{
+    border: 1rpx solid #ccc;
+    padding: 20rpx;
+}

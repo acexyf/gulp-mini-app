@@ -1,0 +1,5 @@
+<view class="wrap">
+
+    <view>组件内部</view>
+    <slot></slot>
+</view>
