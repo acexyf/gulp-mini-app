@@ -10,6 +10,7 @@
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
+  background: url(https://inner.h5.hxylt.cn/static/mini-app/imgs/new-ref.png);
 }
 
 .userinfo-nickname {

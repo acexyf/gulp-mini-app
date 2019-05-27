@@ -1,8 +1,14 @@
 {
   "pages": [
+    "pages/login/lingde_fake_login/lingde_fake_login",
     "pages/index/index",
     "pages/logs/logs"
   ],
+  "subpackages":[{
+    "root":"pages/subpackages",
+    "name":"pkg1",
+    "pages": ["my/my"]
+  }],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
